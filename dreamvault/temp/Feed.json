@@ -5,70 +5,80 @@
         "companyName": "Company 1",
         "companyDescription": "This is the description for Company 1.",
         "fundRaisedTillNow": 500000,
-        "totalPeopleInvested": 10
+        "totalPeopleInvested": 10,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company2.png",
         "companyName": "Company 2",
         "companyDescription": "This is the description for Company 2.",
         "fundRaisedTillNow": 1000000,
-        "totalPeopleInvested": 15
+        "totalPeopleInvested": 15,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company3.png",
         "companyName": "Company 3",
         "companyDescription": "This is the description for Company 3.",
         "fundRaisedTillNow": 750000,
-        "totalPeopleInvested": 8
+        "totalPeopleInvested": 8,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company4.png",
         "companyName": "Company 4",
         "companyDescription": "This is the description for Company 4.",
         "fundRaisedTillNow": 250000,
-        "totalPeopleInvested": 5
+        "totalPeopleInvested": 5,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company5.png",
         "companyName": "Company 5",
         "companyDescription": "This is the description for Company 5.",
         "fundRaisedTillNow": 1500000,
-        "totalPeopleInvested": 20
+        "totalPeopleInvested": 20,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company6.png",
         "companyName": "Company 6",
         "companyDescription": "This is the description for Company 6.",
         "fundRaisedTillNow": 3000000,
-        "totalPeopleInvested": 12
+        "totalPeopleInvested": 12,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company7.png",
         "companyName": "Company 7",
         "companyDescription": "This is the description for Company 7.",
         "fundRaisedTillNow": 100000,
-        "totalPeopleInvested": 3
+        "totalPeopleInvested": 3,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company8.png",
         "companyName": "Company 8",
         "companyDescription": "This is the description for Company 8.",
         "fundRaisedTillNow": 400000,
-        "totalPeopleInvested": 7
+        "totalPeopleInvested": 7,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company9.png",
         "companyName": "Company 9",
         "companyDescription": "This is the description for Company 9.",
         "fundRaisedTillNow": 2000000,
-        "totalPeopleInvested": 18
+        "totalPeopleInvested": 18,
+        "time":25
       },
       {
         "companyIcon": "https://example.com/icons/company10.png",
         "companyName": "Company 10",
         "companyDescription": "This is the description for Company 10.",
         "fundRaisedTillNow": 800000,
-        "totalPeopleInvested": 9
+        "totalPeopleInvested": 9,
+        "time":25
       }
     ]
   }

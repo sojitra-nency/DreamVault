@@ -16,7 +16,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+     
+      <body className={inter.className}>
+      <div className="w-full">
+            <div className="w-full flex justify-evenly p-4 bg-slate-600">
+            <a href="/"><span>DreamVault Logo</span></a>
+             <div className="flex flex-row">
+            <a href="/">Home</a >
+            <a href="/about">About</a >
+            <a href="/signup">SignUp</a >
+            <a href="/signin">SignIn</a >
+            </div>
+        </div>
+        </div>
+
+      {children}
+      
+      </body>
     </html>
   )
 }
