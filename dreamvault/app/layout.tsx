@@ -26,6 +26,7 @@ export default function RootLayout({
             <a href="/about">About</a >
             <a href="/signup">SignUp</a >
             <a href="/signin">SignIn</a >
+            <a className='bg-yellow-400' href="/addevent">Raise Fund</a >
             </div>
         </div>
         </div>
