@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-
+import { Providers } from './providers';
+import '@rainbow-me/rainbowkit/styles.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,8 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-     
       <body className={inter.className}>
+     <Providers>
       <div className="w-full">
             <div className="w-full flex justify-evenly p-4 bg-slate-600">
             <a href="/"><span>DreamVault Logo</span></a>
@@ -33,6 +34,7 @@ export default function RootLayout({
 
       {children}
       
+      </Providers>
       </body>
     </html>
   )
