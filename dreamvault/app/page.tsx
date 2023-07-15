@@ -80,7 +80,7 @@ export default function Home() {
                     </p>
 
                     <div className="flex justify-left">
-                      <button className="px-12 py-2 mt-6 font-medium text-white text-gray-600 bg-blue-300 rounded-lg hover:bg-blue-200">
+                      <button className="px-12 py-2 mt-6 font-medium text-white  bg-blue-300 rounded-lg hover:bg-blue-200">
                         <a
                           href={`/${item.companyName}?id=${item.companyName}`}
                           className="inline-block ml-2"
