@@ -66,7 +66,7 @@ export default function Home() {
             <div className="flex justify-center mb-8" key={item.companyName}>
               <div className="flex flex-row items-center p-2 bg-opacity-50 mt-1  rounded-lg shadow bg-blue-950 h-4/5 md:p-4 dark:border-white-600 dark:hover:bg-blue-400 dark:hover:bg-opacity-40">
                 <div className="flex-shrink-0">
-                  <img className="text-gray-200" src={item.companyIcon} alt={item.companyName} style={{width:'40vh',height:'50vh'}} />
+                  <img className="text-gray-200" src={item.companyIcon} alt={item.companyName} style={{ width: '40vh', height: '40vh' }} />
                 </div>
                 <div className="flex flex-col justify-center flex-grow ml-4">
                   <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-200">{item.companyName}</h3>
@@ -74,10 +74,10 @@ export default function Home() {
                   <p className="mt-4 text-base text-gray-200">Fund Raised Till Now: {item.fundRaisedTillNow}</p>
                   <p className="mt-4 text-base text-gray-200">Total People Invested: {item.totalPeopleInvested}</p>
                   <p className="mt-4 text-base text-gray-200">Funding Ends in :{" "}
-              <span className="text-red-500">{timeDifference}</span>
-            </p>
+                    <span className="text-red-500">{timeDifference}</span>
+                  </p>
 
-                  <div className="flex justify-left">
+                  {/* <div className="flex justify-left">
                     <button className="px-12 py-2 mt-6 font-medium text-white text-gray-600 bg-blue-300 rounded-lg hover:bg-blue-200">
                       <a
                         href={`/${item.companyName}?id=${item.companyName}`}
@@ -86,7 +86,7 @@ export default function Home() {
                         View More
                       </a>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
