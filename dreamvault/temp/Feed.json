@@ -6,7 +6,7 @@
         "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 500000,
         "totalPeopleInvested": 10,
-        "deadline":"2023-07-17"
+        "deadline":"2023-07-20"
       },
       {
         "companyIcon": "/image1.jpg",
@@ -14,7 +14,7 @@
         "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 1000000,
         "totalPeopleInvested": 15,
-        "deadline":"2023-07-17"
+        "deadline":"2023-07-19"
       },
       {
         "companyIcon": "/image1.jpg",
@@ -70,7 +70,7 @@
         "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 2000000,
         "totalPeopleInvested": 18,
-        "deadline":"2023-07-17"
+        "deadline":"2023-07-16"
       },
       {
         "companyIcon": "/image1.jpg",
@@ -78,7 +78,7 @@
         "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:.",
         "fundRaisedTillNow": 800000,
         "totalPeopleInvested": 9,
-        "deadline":"2023-07-17"
+        "deadline":"2023-07-18"
       }
     ]
   }
