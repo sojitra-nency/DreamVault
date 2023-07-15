@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
      <Providers>
-      <nav className="sticky top-0 bg-black bg-opacity-50">
+      <nav className="sticky top-0 bg-gray-800">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between">
               <div id="desktopMenu" className="hidden md:flex items-center space-x-3">
