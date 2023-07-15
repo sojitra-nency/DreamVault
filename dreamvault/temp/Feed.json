@@ -1,84 +1,84 @@
 {
     "feed": [
       {
-        "companyIcon": "https://example.com/icons/company1.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 1",
-        "companyDescription": "This is the description for Company 1.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 500000,
         "totalPeopleInvested": 10,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company2.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 2",
-        "companyDescription": "This is the description for Company 2.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 1000000,
         "totalPeopleInvested": 15,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company3.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 3",
-        "companyDescription": "This is the description for Company 3.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 750000,
         "totalPeopleInvested": 8,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company4.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 4",
-        "companyDescription": "This is the description for Company 4.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 250000,
         "totalPeopleInvested": 5,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company5.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 5",
-        "companyDescription": "This is the description for Company 5.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 1500000,
         "totalPeopleInvested": 20,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company6.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 6",
-        "companyDescription": "This is the description for Company 6.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 3000000,
         "totalPeopleInvested": 12,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company7.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 7",
-        "companyDescription": "This is the description for Company 7.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 100000,
         "totalPeopleInvested": 3,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company8.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 8",
-        "companyDescription": "This is the description for Company 8.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 400000,
         "totalPeopleInvested": 7,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company9.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 9",
-        "companyDescription": "This is the description for Company 9.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "fundRaisedTillNow": 2000000,
         "totalPeopleInvested": 18,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       },
       {
-        "companyIcon": "https://example.com/icons/company10.png",
+        "companyIcon": "/image1.jpg",
         "companyName": "Company 10",
-        "companyDescription": "This is the description for Company 10.",
+        "companyDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:.",
         "fundRaisedTillNow": 800000,
         "totalPeopleInvested": 9,
-        "deadline":"2023-07-15"
+        "deadline":"2023-07-17"
       }
     ]
   }
