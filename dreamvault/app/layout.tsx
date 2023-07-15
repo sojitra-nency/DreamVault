@@ -1,6 +1,10 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { useClient } from 'next/client';
+import { useEffect, useState } from 'react';
+
 import { Providers } from './providers';
 import '@rainbow-me/rainbowkit/styles.css';
 const inter = Inter({ subsets: ['latin'] })
@@ -15,25 +19,102 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
     <html lang="en">
       <body className={inter.className}>
      <Providers>
-      <div className="w-full">
-            <div className="w-full flex justify-evenly p-4 bg-slate-600">
-            <a href="/"><span>DreamVault Logo</span></a>
-             <div className="flex flex-row">
-            <a href="/">Home</a >
-            <a href="/about">About</a >
-            <a href="/signup">SignUp</a >
-            <a href="/signin">SignIn</a >
-            <a className='bg-yellow-400' href="/addevent">Raise Fund</a >
+      <nav className="sticky top-0 bg-gray-800">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="flex justify-between">
+              <div id="desktopMenu" className="hidden md:flex items-center space-x-3">
+                <a href="/" className="block p-3 text-white">Home</a>
+                <a href="/about" className="block p-3 text-white"> About</a>
+              </div>
+
+              <div id="logo" className="flex items-center space-x-3 text-white">
+                <a href="/" className=" block p-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="text-white h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                  </svg>
+                </a>
+                DreamVault
+              </div>
+
+              <div id="auth" className="hidden md:flex items-center space-x-3">
+                <a href="/signup" className="block p-3 py-1.5 bg-white text-black rounded hover:bg-blue-400 transition duration-300">Sign Up</a>
+                <a href="/signin" className="block p-3 py-1.5 bg-white text-black rounded hover:bg-blue-400 transition duration-300">Login</a>
+                <a href="/addevent" className="block p-3 py-1.5 bg-white text-black rounded hover:bg-blue-400 transition duration-300">Raise Fund</a>
+               
+              </div>
+
+              <button id="mobileBurger" className="md:hidden flex items-center" onClick={toggleMobileMenu}>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
+
             </div>
-        </div>
-        </div>
+          </div>
+          <div id="mobileMenu" className={`md:hidden text-sm ${isMobileMenuOpen ? '' : 'hidden'}`}>
+          <div className="flex justify-center ">
+            <a href="/" className="block p-2 text-white hover:bg-white-300">Home</a>
+            </div>
+            <div className="flex justify-center ">
+         
+            <a href="/about" className="text-white block p-2 hover:bg-white-300">About</a>
+            </div>
+            <div className="mb-2">
+  <div className="flex justify-center ">
+    <a href="/signup" className="block p-2 bg-white text-black rounded hover:bg-blue-400 transition duration-300">Signup</a> 
+  </div>
+</div>
+<div className="mb-2">
+  <div className="flex justify-center">
+    <a href="/signin" className="block p-2 bg-white text-black rounded hover:bg-blue-400 transition duration-300">Login</a> 
+  </div>
+</div>
+<div className="mt-2 mb-4">
+  <div className="flex justify-center">
+    <a href="/addevent" className="block p-2 bg-white text-black rounded hover:bg-blue-400 transition duration-300">Raise Fund</a> 
+  </div>
+</div>
+          </div>
+
+        
+
+        </nav>
 
       {children}
-      
+      <footer className="bg-gray-800 py-4">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex items-center justify-between">
+          <div className="text-white">© 2023 DreamVault. All rights reserved.</div>
+          <div className="flex space-x-4">
+            <a href="#" className="text-white hover:text-gray-300">
+              Terms of Service
+            </a>
+            <a href="#" className="text-white hover:text-gray-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function toggleMobileMenu() {
+                var mobileMenu = document.getElementById("mobileMenu");
+                mobileMenu?.classList.toggle("hidden");
+              }
+            `,
+          }}
+        ></script>
       </Providers>
       </body>
     </html>
