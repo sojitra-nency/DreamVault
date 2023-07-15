@@ -62,35 +62,39 @@ export default function Home() {
     <div className="bg-black">
       <div className="relative flex" style={{ minWidth: '100vh' }}>
         <div className="h-screen p-1 m-1 overflow-y-scroll" style={{ minWidth: "75%" }} >
-          {filteredFeed.map((item) => (
-            <div className="flex justify-center mb-8" key={item.companyName}>
-              <div className="flex flex-row items-center p-2 bg-opacity-50 mt-1  rounded-lg shadow bg-blue-950 h-4/5 md:p-4 dark:border-white-600 dark:hover:bg-blue-400 dark:hover:bg-opacity-40">
-                <div className="flex-shrink-0">
-                  <img className="text-gray-200" src={item.companyIcon} alt={item.companyName} style={{ width: '40vh', height: '40vh' }} />
-                </div>
-                <div className="flex flex-col justify-center flex-grow ml-4">
-                  <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-200">{item.companyName}</h3>
-                  <p className="mb-3 font-normal text-gray-200 dark:text-gray-200">{item.companyDescription}</p>
-                  <p className="mt-4 text-base text-gray-200">Fund Raised Till Now: {item.fundRaisedTillNow}</p>
-                  <p className="mt-4 text-base text-gray-200">Total People Invested: {item.totalPeopleInvested}</p>
-                  <p className="mt-4 text-base text-gray-200">Funding Ends in :{" "}
-                    <span className="text-red-500">{timeDifference}</span>
-                  </p>
 
-                  {/* <div className="flex justify-left">
-                    <button className="px-12 py-2 mt-6 font-medium text-white text-gray-600 bg-blue-300 rounded-lg hover:bg-blue-200">
-                      <a
-                        href={`/${item.companyName}?id=${item.companyName}`}
-                        className="inline-block ml-2"
-                      >
-                        View More
-                      </a>
-                    </button>
-                  </div> */}
+          {filteredFeed.map((item) => {
+            const timeDifference = getTimeDifference(item.deadline);
+            return (
+              <div className="flex justify-center mb-8" key={item.companyName}>
+                <div className="flex flex-row items-center p-2 bg-opacity-50 mt-1  rounded-lg shadow bg-blue-950 h-4/5 md:p-4 dark:border-white-600 dark:hover:bg-blue-400 dark:hover:bg-opacity-40">
+                  <div className="flex-shrink-0">
+                    <img className="text-gray-200" src={item.companyIcon} alt={item.companyName} style={{ width: '40vh', height: '50vh' }} />
+                  </div>
+                  <div className="flex flex-col justify-center flex-grow ml-4">
+                    <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-200">{item.companyName}</h3>
+                    <p className="mb-3 font-normal text-gray-200 dark:text-gray-200">{item.companyDescription}</p>
+                    <p className="mt-4 text-base text-gray-200">Fund Raised Till Now: {item.fundRaisedTillNow}</p>
+                    <p className="mt-4 text-base text-gray-200">Total People Invested: {item.totalPeopleInvested}</p>
+                    <p className="mt-4 text-base text-gray-200">Funding Ends in :{" "}
+                      <span className="text-red-500">{timeDifference}</span>
+                    </p>
+
+                    <div className="flex justify-left">
+                      <button className="px-12 py-2 mt-6 font-medium text-white  bg-blue-300 rounded-lg hover:bg-blue-200">
+                        <a
+                          href={`/${item.companyName}?id=${item.companyName}`}
+                          className="inline-block ml-2"
+                        >
+                          View More
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-            </div>
-          ))}
+            )})}
         </div>
         <div className="">
           <div className="w-full ">

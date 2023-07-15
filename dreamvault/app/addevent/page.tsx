@@ -9,7 +9,10 @@ import {
 } from "wagmi";
 import {CONTRACT_ADDRESS,abi}from './../utils/contract'
 interface EventInput {
+  usrName: string;
   companyName: string;
+  eventName: string;
+  deadline: string;
   description: string;
   logos: FileList | null;
   images: FileList | null;
@@ -18,7 +21,10 @@ interface EventInput {
 
 const EventForm: React.FC = () => {
   const [eventInput, setEventInput] = useState<EventInput>({
+    usrName: "",
     companyName: "",
+    eventName: "",
+    deadline: "",
     description: "",
     logos: null,
     images: null,
@@ -67,6 +73,15 @@ const EventForm: React.FC = () => {
     }));
   };
 
+  const handleDeadlineChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const { value } = event.target;
+    setEventInput((prevInput) => ({
+      ...prevInput,
+      deadline: value,
+    }));
+  };
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -104,13 +119,24 @@ const EventForm: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-slate-200">
-      <form onSubmit={handleSubmit} className="bg-white rounded-md p-10 shadow-lg">
+    <div className="flex items-center justify-center bg-white m-4 rounded-sm transform hover:-translate-y-2 transition duration-300 ease-in-out" >
+      <form onSubmit={handleSubmit} className="bg-white rounded-md p-5 shadow-lg mt-10">
         <h2 className="text-2xl font-semibold text-center mb-6">
           Add Your Events to DreamVault
         </h2>
 
         {renderMessage()}
+        <div className="mb-4">
+          <label htmlFor="usrName">User Name:</label>
+          <input
+            className="w-full p-2 border rounded"
+            type="text"
+            id="usrName"
+            name="usrName"
+            value={eventInput.usrName}
+            onChange={handleInputChange}
+          />
+        </div>
 
         <div className="mb-4">
           <label htmlFor="companyName">Company Name:</label>
@@ -120,6 +146,18 @@ const EventForm: React.FC = () => {
             id="companyName"
             name="companyName"
             value={eventInput.companyName}
+            onChange={handleInputChange}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="eventName">Event Name:</label>
+          <input
+            className="w-full p-2 border rounded"
+            type="text"
+            id="eventName"
+            name="eventName"
+            value={eventInput.eventName}
             onChange={handleInputChange}
           />
         </div>
@@ -157,6 +195,18 @@ const EventForm: React.FC = () => {
             accept="image/*"
             multiple
             onChange={handleImageChange}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="deadline">Deadline:</label>
+          <input
+            className="p-2 border rounded"
+            type="date"
+            id="deadline"
+            name="deadline"
+            value={eventInput.deadline}
+            onChange={handleDeadlineChange}
           />
         </div>
 
