@@ -62,6 +62,7 @@ export default function Home() {
     <div className="bg-black">
       <div className="relative flex" style={{ minWidth: '100vh' }}>
         <div className="h-screen p-1 m-1 overflow-y-scroll" style={{ minWidth: "75%" }} >
+
           {filteredFeed.map((item) => {
             const timeDifference = getTimeDifference(item.deadline);
             return (
@@ -90,6 +91,7 @@ export default function Home() {
                       </button>
                     </div>
                   </div>
+
                 </div>
               </div>
             )})}

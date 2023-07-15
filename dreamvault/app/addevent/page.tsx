@@ -1,6 +1,13 @@
 "use client"
 import React, { useState } from "react";
-
+import {
+  useContractEvent,
+  usePrepareContractWrite,
+  useContractWrite,
+  useWaitForTransaction,
+  useAccount,
+} from "wagmi";
+import {CONTRACT_ADDRESS,abi}from './../utils/contract'
 interface EventInput {
   usrName: string;
   companyName: string;
