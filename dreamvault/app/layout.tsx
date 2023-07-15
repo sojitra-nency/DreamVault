@@ -2,9 +2,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { useClient } from 'next/client';
 import { useEffect, useState } from 'react';
-
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { Providers } from './providers';
 import '@rainbow-me/rainbowkit/styles.css';
 const inter = Inter({ subsets: ['latin'] })
@@ -28,9 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black">
         <Providers>
-          <nav className="sticky top-0  bg-black  text-white  font-semibold ">
+          <nav className="fixed top-0  bg-black  text-white  font-semibold w-screen z-10">
             <div className=''>
-            <div className="max-w-6xl mx-auto px-4">
+            <div className="max-w-6xl mx-auto px-3">
               <div className="flex justify-between">
                 <div id="desktopMenu" className="hidden md:flex items-center space-x-3">
                   <a href="/" className="block p-3  hover:bg-white hover:text-black ">Home</a>
@@ -47,9 +46,8 @@ export default function RootLayout({
                 </div>
 
                 <div id="auth" className="hidden md:flex items-center space-x-3">
-                  <a href="/signup" className="block p-3  hover:bg-white hover:text-black ">Sign Up</a>
-                  <a href="/signin" className="block p-3  hover:bg-white hover:text-black">Login</a>
-                  <a href="/addevent" className="block p-3  hover:bg-white hover:text-black">Raise Fund</a>
+                <ConnectButton />
+                <a href="/addevent" className="block p-3  hover:bg-white hover:text-black">Raise Fund</a>
 
                 </div>
 
@@ -70,16 +68,7 @@ export default function RootLayout({
 
                 <a href="/about" className=" block p-2  hover:bg-white hover:text-black">About</a>
               </div>
-              <div className="mb-2">
-                <div className="flex justify-center ">
-                  <a href="/signup" className=" block p-2  hover:bg-white hover:text-black">Signup</a>
-                </div>
-              </div>
-              <div className="mb-2">
-                <div className="flex justify-center">
-                  <a href="/signin" className=" block p-2  hover:bg-white hover:text-black">Login</a>
-                </div>
-              </div>
+              <ConnectButton />
               <div className="mt-2 mb-4">
                 <div className="flex justify-center">
                   <a href="/addevent" className=" block p-2  hover:bg-white hover:text-black">Raise Fund</a>

@@ -39,7 +39,7 @@ const About = () => {
                                         1
                                     </div>
 
-                                    <div className="ml-3 text-lg text-black font-semibold">
+                                    <div className="ml-3 text-lg text-black font-semibold mt-2">
                                         Comprehensive Crowdfunding 
                                     </div>
                                 </div><br/>
@@ -59,7 +59,7 @@ const About = () => {
                                         2
                                     </div>
 
-                                    <div className="ml-3 text-lg text-black font-semibold">
+                                    <div className="ml-3 text-lg text-black font-semibold mt-2">
                                         Transparent Fund Tracking
                                     </div>
                                 </div><br/>
@@ -77,7 +77,7 @@ const About = () => {
                                         3
                                     </div>
 
-                                    <div className="ml-3 text-lg text-black font-semibold">
+                                    <div className="ml-3 text-lg text-black font-semibold mt-2">
                                         NFTmint Integration
                                     </div>
                                 </div><br/>
